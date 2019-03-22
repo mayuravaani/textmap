@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.wso2.extension.siddhi.io.file:siddhi-io-file:1.0.13">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/extension/siddhi/io/file/siddhi-io-file/1.0.13/siddhi-io-file-1.0.13.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/extension/siddhi/io/file/siddhi-io-file/1.0.13/siddhi-io-file-1.0.13-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/extension/siddhi/io/file/siddhi-io-file/1.0.13/siddhi-io-file-1.0.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
