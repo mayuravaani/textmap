@@ -51,6 +51,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class TextCustomSinkMapperTestCase {
+
     private static final Logger log = Logger.getLogger(TextCustomSinkMapperTestCase.class);
     private AtomicInteger wso2Count = new AtomicInteger(0);
     private AtomicInteger ibmCount = new AtomicInteger(0);
@@ -59,37 +60,43 @@ public class TextCustomSinkMapperTestCase {
 
     @BeforeMethod
     public void init() {
+
         wso2Count.set(0);
         ibmCount.set(0);
     }
 
     @Test
     public void testTextSinkCustomMapping() throws InterruptedException {
+
         log.info("Test custom text mapping.");
         List<Object> onMessageList = new ArrayList<Object>();
 
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
                 onMessageList.add(msg);
             }
 
             @Override
             public String getTopic() {
-                return "W&SO2";
+
+                return "WSO2";
             }
         };
 
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
                 onMessageList.add(msg);
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -116,9 +123,9 @@ public class TextCustomSinkMapperTestCase {
         InputHandler stockStream = siddhiAppRuntime.getInputHandler("FooStream");
 
         siddhiAppRuntime.start();
-        stockStream.send(new Object[]{"W&SO2", 55.6f, 100L});
+        stockStream.send(new Object[]{"WSO2", 55.6f, 100L});
         stockStream.send(new Object[]{"IBM", 75.6f, 100L});
-        stockStream.send(new Object[]{"W&SO2", 57.6f, 100L});
+        stockStream.send(new Object[]{"WSO2", 57.6f, 100L});
         SiddhiTestHelper.waitForEvents(waitTime, 2, wso2Count, timeout);
         SiddhiTestHelper.waitForEvents(waitTime, 1, ibmCount, timeout);
 
@@ -126,9 +133,9 @@ public class TextCustomSinkMapperTestCase {
         Assert.assertEquals(wso2Count.get(), 2);
         Assert.assertEquals(ibmCount.get(), 1);
         //assert custom text
-        Assert.assertEquals(onMessageList.get(0).toString(), "Stock price of W&SO2 is 55.6");
+        Assert.assertEquals(onMessageList.get(0).toString(), "Stock price of WSO2 is 55.6");
         Assert.assertEquals(onMessageList.get(1).toString(), "Stock price of IBM is 75.6");
-        Assert.assertEquals(onMessageList.get(2).toString(), "Stock price of W&SO2 is 57.6");
+        Assert.assertEquals(onMessageList.get(2).toString(), "Stock price of WSO2 is 57.6");
         siddhiAppRuntime.shutdown();
 
         //unsubscribe from "inMemory" broker per topic
@@ -136,18 +143,20 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.unsubscribe(subscriberIBM);
     }
 
-
     @Test
     public void testTextSinkMapperEventGroupDefaultDelimiter() throws InterruptedException {
+
         log.info("Test for default delimiter");
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "WSO2";
             }
         };
@@ -155,11 +164,13 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -209,15 +220,18 @@ public class TextCustomSinkMapperTestCase {
 
     @Test
     public void testTextSinkMapperEventGroupCustomDelimiter() throws InterruptedException {
+
         log.info("Test for custom delimiter.");
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "WSO2";
             }
         };
@@ -225,11 +239,13 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -280,16 +296,19 @@ public class TextCustomSinkMapperTestCase {
 
     @Test
     public void testTextSinkMapperWithoutPayload() throws InterruptedException {
+
         log.info("Test custom mapping without payload.");
 
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "WSO2";
             }
         };
@@ -297,11 +316,13 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -364,15 +385,18 @@ public class TextCustomSinkMapperTestCase {
 
     @Test
     public void testTextSinkMapperEventGroupSingleEvent() throws InterruptedException {
+
         log.info("Test for event group with single event.");
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "WSO2";
             }
         };
@@ -380,11 +404,13 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -428,18 +454,21 @@ public class TextCustomSinkMapperTestCase {
 
     @Test(expectedExceptions = SiddhiAppCreationException.class)
     public void testTextSinkWrongMapping() throws InterruptedException {
+
         log.info("Test custom for wrong mapping.");
         List<Object> onMessageList = new ArrayList<Object>();
 
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
                 onMessageList.add(msg);
             }
 
             @Override
             public String getTopic() {
+
                 return "WSO2";
             }
         };
@@ -447,12 +476,14 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
                 onMessageList.add(msg);
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -498,15 +529,18 @@ public class TextCustomSinkMapperTestCase {
 
     @Test
     public void testTextSinkMapperNotEventGroupWithCustomDelimiter() throws InterruptedException {
+
         log.info("Test extra delimiter.");
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "WSO2";
             }
         };
@@ -514,11 +548,13 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -569,15 +605,18 @@ public class TextCustomSinkMapperTestCase {
 
     @Test
     public void testTextSinkMapperNewLineCharacter() throws InterruptedException {
+
         log.info("Test with custom new lie charater.");
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "WSO2";
             }
         };
@@ -585,11 +624,13 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -640,15 +681,18 @@ public class TextCustomSinkMapperTestCase {
 
     @Test
     public void testTextSinkMapperNewLineCharacterWrong() throws InterruptedException {
+
         log.info("Test with custom new.line.character.");
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 wso2Count.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "WSO2";
             }
         };
@@ -656,11 +700,13 @@ public class TextCustomSinkMapperTestCase {
         InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
             @Override
             public void onMessage(Object msg) {
+
                 ibmCount.incrementAndGet();
             }
 
             @Override
             public String getTopic() {
+
                 return "IBM";
             }
         };
@@ -673,8 +719,8 @@ public class TextCustomSinkMapperTestCase {
                 "@App:name('TestSiddhiApp')" +
                 "define stream FooStream (symbol string, price float, volume long); " +
                 "@sink(type='inMemory', topic='{{symbol}}', @map(type='text' , event.grouping.enabled='false'," +
-                "new.line.character='\\r' , @payload(\"Stock price of {{symbol}} is" +
-                " {{price}}\"))) " +
+                "new.line.character='\\r' , @payload(\"Stock price of {{{symbol}}} is" +
+                " {{{price}}}\"))) " +
                 "define stream BarStream (symbol string, price float, volume long); ";
 
         String query = "" +
@@ -711,6 +757,7 @@ public class TextCustomSinkMapperTestCase {
 
     @Test
     public void fileSinkTest() throws InterruptedException {
+
         log.info("test text custom map with file io");
         AtomicInteger count = new AtomicInteger();
         ClassLoader classLoader = TextDefaultSinkMapperTestCase.class.getClassLoader();
@@ -719,7 +766,7 @@ public class TextCustomSinkMapperTestCase {
         String streams = "" +
                 "@App:name('TestSiddhiApp')" +
                 "define stream FooStream (symbol string, price float, volume long); " +
-                "@sink(type='file', @map(type='text' , @payload('Stock price of {{symbol}} is {{price}}')), " +
+                "@sink(type='file', @map(type='text' , @payload('Stock price of {{{symbol}}} is {{{price}}}')), " +
                 "append='false', " +
                 "file.uri='" + sinkUri + "/{{symbol}}.txt') " +
                 "define stream BarStream (symbol string, price float, volume long); ";
@@ -771,6 +818,7 @@ public class TextCustomSinkMapperTestCase {
 
     @Test
     public void fileSinkTestGroup() throws InterruptedException {
+
         log.info("test text default map with file io");
         AtomicInteger count = new AtomicInteger();
         ClassLoader classLoader = TextDefaultSinkMapperTestCase.class.getClassLoader();
@@ -780,7 +828,7 @@ public class TextCustomSinkMapperTestCase {
                 "@App:name('TestSiddhiApp')" +
                 "define stream FooStream (symbol string, price float, volume long); " +
                 "@sink(type='file', @map(type='text',event.grouping.enabled='true', @payload('Stock price of " +
-                "{{symbol}} is {{price}}')" +
+                "{{{symbol}}} is {{{price}}}')" +
                 "), append='false', " +
                 "file.uri='" + sinkUri + "/{{symbol}}.txt') " +
                 "define stream BarStream (symbol string, price float, volume long); ";
@@ -882,7 +930,7 @@ public class TextCustomSinkMapperTestCase {
                 + "@sink(type='http',publisher.url='http://localhost:8005/abc',method='{{method}}',"
                 + "headers='{{headers}}',"
                 + "@map(type='text', event.grouping" +
-                ".enabled='true', @payload('{{message}}'))) "
+                ".enabled='true', @payload('{{{message}}}'))) "
                 + "Define stream BarStream (message String,method String,headers String);";
         String query = ("@info(name = 'query1') " +
                 "from FooStream select message,method,headers insert into BarStream;");
@@ -913,5 +961,80 @@ public class TextCustomSinkMapperTestCase {
                 "WSO2\n");
         listenerHandler.shutdown();
         siddhiAppRuntime.shutdown();
+    }
+
+    @Test
+    public void testTextSinkMapperEventGroupFalseWithEventArray() throws InterruptedException {
+
+        log.info("Test for default delimiter");
+        InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
+            @Override
+            public void onMessage(Object msg) {
+
+                wso2Count.incrementAndGet();
+            }
+
+            @Override
+            public String getTopic() {
+
+                return "WSO2";
+            }
+        };
+
+        InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
+            @Override
+            public void onMessage(Object msg) {
+
+                ibmCount.incrementAndGet();
+            }
+
+            @Override
+            public String getTopic() {
+
+                return "IBM";
+            }
+        };
+
+        //subscribe to "inMemory" broker per topic
+        InMemoryBroker.subscribe(subscriberWSO2);
+        InMemoryBroker.subscribe(subscriberIBM);
+
+        String streams = "" +
+                "@App:name('TestSiddhiApp')" +
+                "define stream FooStream (symbol string, price float, volume long); " +
+                "@sink(type='inMemory', topic='{{symbol}}', @map(type='text' , event.grouping.enabled='false' , " +
+                "@payload(\"Stock price of {{{symbol}}} is {{{price}}}\"))) " +
+                "define stream BarStream (symbol string, price float, volume long); ";
+
+        String query = "" +
+                "from FooStream " +
+                "select * " +
+                "insert into BarStream; ";
+
+        SiddhiManager siddhiManager = new SiddhiManager();
+        siddhiManager.setExtension("sink:inMemory", InMemorySink.class);
+        SiddhiAppRuntime siddhiAppRuntime = siddhiManager.createSiddhiAppRuntime(streams + query);
+        InputHandler stockStream = siddhiAppRuntime.getInputHandler("FooStream");
+
+        siddhiAppRuntime.start();
+        List<Event> arrayList = new ArrayList<>(10);
+        for (int j = 0; j < 5; j++) {
+            arrayList.add(new org.wso2.siddhi.core.event
+                    .Event(System.currentTimeMillis(), new Object[]{"WSO2", 55.6f, 10}));
+            arrayList.add(new org.wso2.siddhi.core.event
+                    .Event(System.currentTimeMillis(), new Object[]{"IBM", 75.6f, 10}));
+        }
+        stockStream.send(arrayList.toArray(new org.wso2.siddhi.core.event.Event[5]));
+        SiddhiTestHelper.waitForEvents(waitTime, 1, wso2Count, timeout);
+        SiddhiTestHelper.waitForEvents(waitTime, 1, ibmCount, timeout);
+
+        //assert event count
+        Assert.assertEquals(wso2Count.get(), 5);
+        Assert.assertEquals(ibmCount.get(), 5);
+        siddhiAppRuntime.shutdown();
+
+        //unsubscribe from "inMemory" broker per topic
+        InMemoryBroker.unsubscribe(subscriberWSO2);
+        InMemoryBroker.unsubscribe(subscriberIBM);
     }
 }

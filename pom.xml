@@ -163,9 +163,9 @@
         <siddhi.extension.io.file.version>1.0.13</siddhi.extension.io.file.version>
         <siddhi.extension.io.http.version>1.0.36</siddhi.extension.io.http.version>
         <siddhi.extension.io.tcp.version>2.0.20</siddhi.extension.io.tcp.version>
-
+        <mustache.version>0.9.6</mustache.version>
         <log4j.version>1.2.17.wso2v1</log4j.version>
-        <testng.version>6.8</testng.version>
+        <testng.version>6.11</testng.version>
         <jacoco.plugin.version>0.7.9</jacoco.plugin.version>
         <carbon.feature.plugin.version>3.0.0</carbon.feature.plugin.version>
     </properties>

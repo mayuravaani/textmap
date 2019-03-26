@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite">
+              <span class="suite-name border-failed">Siddhi-Map-Text-Test-Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Siddhi-Map-Text-Test-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Siddhi-Map-Text-Test-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Siddhi-Map-Text-Test-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Siddhi-Map-Text-Test-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Siddhi-Map-Text-Test-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Siddhi-Map-Text-Test-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Siddhi-Map-Text-Test-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 5 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Siddhi-Map-Text-Test-Suite" class="hide-methods failed suite-Siddhi-Map-Text-Test-Suite"> (hide)</a> <!-- hide-methods failed suite-Siddhi-Map-Text-Test-Suite -->
+                      <a href="#" panel-name="suite-Siddhi-Map-Text-Test-Suite" class="show-methods failed suite-Siddhi-Map-Text-Test-Suite"> (show)</a> <!-- show-methods failed suite-Siddhi-Map-Text-Test-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Siddhi-Map-Text-Test-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testTextSinkMapperEventGroupCustomDelimiter">testTextSinkMapperEventGroupCustomDelimiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testTextSinkMapperEventGroupDefaultDecimeter">testTextSinkMapperEventGroupDefaultDecimeter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testTextSinkMapperEventGroupSingleEvent">testTextSinkMapperEventGroupSingleEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testTextSinkMapperNewLineCharacter">testTextSinkMapperNewLineCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testTextSinkMapperWithDefaultMapping">testTextSinkMapperWithDefaultMapping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Siddhi-Map-Text-Test-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Siddhi-Map-Text-Test-Suite" class="hide-methods passed suite-Siddhi-Map-Text-Test-Suite"> (hide)</a> <!-- hide-methods passed suite-Siddhi-Map-Text-Test-Suite -->
+                      <a href="#" panel-name="suite-Siddhi-Map-Text-Test-Suite" class="show-methods passed suite-Siddhi-Map-Text-Test-Suite"> (show)</a> <!-- show-methods passed suite-Siddhi-Map-Text-Test-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Siddhi-Map-Text-Test-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="fileSinkTest">fileSinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="fileSinkTestGroup">fileSinkTestGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="fileSinkTestGroup">fileSinkTestGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="fileSinkTestNewLineCharacter">fileSinkTestNewLineCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="fileSinkTestSingle">fileSinkTestSingle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testHTTPTextMappingText">testHTTPTextMappingText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testHTTPTextMappingText">testHTTPTextMappingText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testHTTPTextMappingTextMultiple">testHTTPTextMappingTextMultiple</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkCustomMapping">testTextSinkCustomMapping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testTextSinkMapperDefaultEventGrouping">testTextSinkMapperDefaultEventGrouping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testTextSinkMapperDefaultEventGroupingTrue">testTextSinkMapperDefaultEventGroupingTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkMapperEventGroupCustomDelimiter">testTextSinkMapperEventGroupCustomDelimiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkMapperEventGroupDefaultDelimiter">testTextSinkMapperEventGroupDefaultDelimiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" hash-for-method="testTextSinkMapperEventGroupHTTP">testTextSinkMapperEventGroupHTTP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkMapperEventGroupSingleEvent">testTextSinkMapperEventGroupSingleEvent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkMapperNewLineCharacter">testTextSinkMapperNewLineCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkMapperNewLineCharacterWrong">testTextSinkMapperNewLineCharacterWrong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkMapperNotEventGroupWithCustomDelimiter">testTextSinkMapperNotEventGroupWithCustomDelimiter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkMapperWithoutPayload">testTextSinkMapperWithoutPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Siddhi-Map-Text-Test-Suite" title="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" hash-for-method="testTextSinkWrongMapping">testTextSinkWrongMapping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Siddhi-Map-Text-Test-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Siddhi-Map-Text-Test-Suite" class="panel Siddhi-Map-Text-Test-Suite">
+          <div class="suite-Siddhi-Map-Text-Test-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperEventGroupCustomDelimiter">
+                  </a> <!-- testTextSinkMapperEventGroupCustomDelimiter -->
+                  <span class="method-name">testTextSinkMapperEventGroupCustomDelimiter</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [100000] but found [1]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupCustomDelimiter(TextDefaultSinkMapperTestCase.java:416)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 26 stack frames<br/> java.lang.AssertionError: expected [100000] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupCustomDelimiter(TextDefaultSinkMapperTestCase.java:416)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>org.testng.Assert.assertEquals(Assert.java:380)<br>org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupCustomDelimiter(TextDefaultSinkMapperTestCase.java:416)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperEventGroupDefaultDecimeter">
+                  </a> <!-- testTextSinkMapperEventGroupDefaultDecimeter -->
+                  <span class="method-name">testTextSinkMapperEventGroupDefaultDecimeter</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [1] but found [0]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupDefaultDecimeter(TextDefaultSinkMapperTestCase.java:340)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 26 stack frames<br/> java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupDefaultDecimeter(TextDefaultSinkMapperTestCase.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>org.testng.Assert.assertEquals(Assert.java:380)<br>org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupDefaultDecimeter(TextDefaultSinkMapperTestCase.java:340)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperEventGroupSingleEvent">
+                  </a> <!-- testTextSinkMapperEventGroupSingleEvent -->
+                  <span class="method-name">testTextSinkMapperEventGroupSingleEvent</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [1] but found [3]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupSingleEvent(TextDefaultSinkMapperTestCase.java:544)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 26 stack frames<br/> java.lang.AssertionError: expected [1] but found [3]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupSingleEvent(TextDefaultSinkMapperTestCase.java:544)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>org.testng.Assert.assertEquals(Assert.java:380)<br>org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupSingleEvent(TextDefaultSinkMapperTestCase.java:544)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperNewLineCharacter">
+                  </a> <!-- testTextSinkMapperNewLineCharacter -->
+                  <span class="method-name">testTextSinkMapperNewLineCharacter</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [1] but found [4]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperNewLineCharacter(TextDefaultSinkMapperTestCase.java:481)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 26 stack frames<br/> java.lang.AssertionError: expected [1] but found [4]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperNewLineCharacter(TextDefaultSinkMapperTestCase.java:481)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>org.testng.Assert.assertEquals(Assert.java:380)<br>org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperNewLineCharacter(TextDefaultSinkMapperTestCase.java:481)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperWithDefaultMapping">
+                  </a> <!-- testTextSinkMapperWithDefaultMapping -->
+                  <span class="method-name">testTextSinkMapperWithDefaultMapping</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [2] but found [10]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperWithDefaultMapping(TextDefaultSinkMapperTestCase.java:144)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 26 stack frames<br/> java.lang.AssertionError: expected [2] but found [10]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperWithDefaultMapping(TextDefaultSinkMapperTestCase.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:370)<br>org.testng.Assert.assertEquals(Assert.java:380)<br>org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperWithDefaultMapping(TextDefaultSinkMapperTestCase.java:144)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Siddhi-Map-Text-Test-Suite-class-failed -->
+          <div class="suite-Siddhi-Map-Text-Test-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileSinkTestGroup">
+                  </a> <!-- fileSinkTestGroup -->
+                  <span class="method-name">fileSinkTestGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileSinkTestNewLineCharacter">
+                  </a> <!-- fileSinkTestNewLineCharacter -->
+                  <span class="method-name">fileSinkTestNewLineCharacter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileSinkTestSingle">
+                  </a> <!-- fileSinkTestSingle -->
+                  <span class="method-name">fileSinkTestSingle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHTTPTextMappingText">
+                  </a> <!-- testHTTPTextMappingText -->
+                  <span class="method-name">testHTTPTextMappingText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperDefaultEventGrouping">
+                  </a> <!-- testTextSinkMapperDefaultEventGrouping -->
+                  <span class="method-name">testTextSinkMapperDefaultEventGrouping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperDefaultEventGroupingTrue">
+                  </a> <!-- testTextSinkMapperDefaultEventGroupingTrue -->
+                  <span class="method-name">testTextSinkMapperDefaultEventGroupingTrue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperEventGroupHTTP">
+                  </a> <!-- testTextSinkMapperEventGroupHTTP -->
+                  <span class="method-name">testTextSinkMapperEventGroupHTTP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Siddhi-Map-Text-Test-Suite-class-passed -->
+          <div class="suite-Siddhi-Map-Text-Test-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileSinkTest">
+                  </a> <!-- fileSinkTest -->
+                  <span class="method-name">fileSinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileSinkTestGroup">
+                  </a> <!-- fileSinkTestGroup -->
+                  <span class="method-name">fileSinkTestGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHTTPTextMappingText">
+                  </a> <!-- testHTTPTextMappingText -->
+                  <span class="method-name">testHTTPTextMappingText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHTTPTextMappingTextMultiple">
+                  </a> <!-- testHTTPTextMappingTextMultiple -->
+                  <span class="method-name">testHTTPTextMappingTextMultiple</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkCustomMapping">
+                  </a> <!-- testTextSinkCustomMapping -->
+                  <span class="method-name">testTextSinkCustomMapping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperEventGroupCustomDelimiter">
+                  </a> <!-- testTextSinkMapperEventGroupCustomDelimiter -->
+                  <span class="method-name">testTextSinkMapperEventGroupCustomDelimiter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperEventGroupDefaultDelimiter">
+                  </a> <!-- testTextSinkMapperEventGroupDefaultDelimiter -->
+                  <span class="method-name">testTextSinkMapperEventGroupDefaultDelimiter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperEventGroupSingleEvent">
+                  </a> <!-- testTextSinkMapperEventGroupSingleEvent -->
+                  <span class="method-name">testTextSinkMapperEventGroupSingleEvent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperNewLineCharacter">
+                  </a> <!-- testTextSinkMapperNewLineCharacter -->
+                  <span class="method-name">testTextSinkMapperNewLineCharacter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperNewLineCharacterWrong">
+                  </a> <!-- testTextSinkMapperNewLineCharacterWrong -->
+                  <span class="method-name">testTextSinkMapperNewLineCharacterWrong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperNotEventGroupWithCustomDelimiter">
+                  </a> <!-- testTextSinkMapperNotEventGroupWithCustomDelimiter -->
+                  <span class="method-name">testTextSinkMapperNotEventGroupWithCustomDelimiter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkMapperWithoutPayload">
+                  </a> <!-- testTextSinkMapperWithoutPayload -->
+                  <span class="method-name">testTextSinkMapperWithoutPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTextSinkWrongMapping">
+                  </a> <!-- testTextSinkWrongMapping -->
+                  <span class="method-name">testTextSinkWrongMapping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Siddhi-Map-Text-Test-Suite-class-passed -->
+        </div> <!-- panel Siddhi-Map-Text-Test-Suite -->
+        <div panel-name="test-xml-Siddhi-Map-Text-Test-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/mayuravaani/Desktop/mapp/siddhi-map-text/component/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Siddhi-Map-Text-Test-Suite&quot;&gt;
+  &lt;test name=&quot;Siddhi-map-text-tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase&quot;/&gt;
+      &lt;class name=&quot;org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Siddhi-map-text-tests --&gt;
+&lt;/suite&gt; &lt;!-- Siddhi-Map-Text-Test-Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Siddhi-Map-Text-Test-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Siddhi-Map-Text-Test-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Siddhi-map-text-tests (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Siddhi-Map-Text-Test-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Siddhi-Map-Text-Test-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Siddhi-Map-Text-Test-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Siddhi-Map-Text-Test-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Siddhi-Map-Text-Test-Suite');
+function tableData_Siddhi-Map-Text-Test-Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testTextSinkMapperEventGroupDefaultDecimeter')
+data.setCell(0, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(0, 3, 60079);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testTextSinkMapperEventGroupDefaultDelimiter')
+data.setCell(1, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(1, 3, 8201);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'fileSinkTestGroup')
+data.setCell(2, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(2, 3, 2449);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testHTTPTextMappingText')
+data.setCell(3, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(3, 3, 1937);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'fileSinkTestSingle')
+data.setCell(4, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(4, 3, 1143);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'fileSinkTestNewLineCharacter')
+data.setCell(5, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(5, 3, 1136);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'fileSinkTest')
+data.setCell(6, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(6, 3, 1129);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'fileSinkTestGroup')
+data.setCell(7, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(7, 3, 1127);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testTextSinkMapperEventGroupHTTP')
+data.setCell(8, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(8, 3, 1071);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testHTTPTextMappingTextMultiple')
+data.setCell(9, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(9, 3, 1062);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testHTTPTextMappingText')
+data.setCell(10, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(10, 3, 1034);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testTextSinkMapperWithDefaultMapping')
+data.setCell(11, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(11, 3, 1013);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testTextSinkMapperDefaultEventGrouping')
+data.setCell(12, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(12, 3, 31);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testTextSinkMapperEventGroupCustomDelimiter')
+data.setCell(13, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(13, 3, 28);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testTextSinkMapperEventGroupSingleEvent')
+data.setCell(14, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(14, 3, 26);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testTextSinkMapperDefaultEventGroupingTrue')
+data.setCell(15, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(15, 3, 23);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testTextSinkCustomMapping')
+data.setCell(16, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(16, 3, 20);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testTextSinkMapperNewLineCharacter')
+data.setCell(17, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase')
+data.setCell(17, 3, 18);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testTextSinkMapperEventGroupCustomDelimiter')
+data.setCell(18, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(18, 3, 17);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testTextSinkMapperWithoutPayload')
+data.setCell(19, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(19, 3, 15);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testTextSinkMapperNotEventGroupWithCustomDelimiter')
+data.setCell(20, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(20, 3, 11);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testTextSinkWrongMapping')
+data.setCell(21, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(21, 3, 10);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testTextSinkMapperNewLineCharacter')
+data.setCell(22, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(22, 3, 9);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testTextSinkMapperEventGroupSingleEvent')
+data.setCell(23, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(23, 3, 9);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testTextSinkMapperNewLineCharacterWrong')
+data.setCell(24, 2, 'org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase')
+data.setCell(24, 3, 8);
+window.suiteTableData['Siddhi-Map-Text-Test-Suite']= { tableData: data, tableDiv: 'times-div-Siddhi-Map-Text-Test-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Siddhi-Map-Text-Test-Suite">
+              </div> <!-- times-div-Siddhi-Map-Text-Test-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Siddhi-Map-Text-Test-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Siddhi-Map-Text-Test-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Siddhi-Map-Text-Test-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Siddhi-Map-Text-Test-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fileSinkTestGroup</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">2460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fileSinkTestNewLineCharacter</span>
+                <span class="method-start">2461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fileSinkTestSingle</span>
+                <span class="method-start">3598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">3598 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">4742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testHTTPTextMappingText</span>
+                <span class="method-start">4742 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">6679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperDefaultEventGrouping</span>
+                <span class="method-start">6680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">6711 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperDefaultEventGroupingTrue</span>
+                <span class="method-start">6712 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">6736 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTextSinkMapperEventGroupCustomDelimiter</span>
+                <span class="method-start">6738 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">6777 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTextSinkMapperEventGroupDefaultDecimeter</span>
+                <span class="method-start">6777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">66858 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperEventGroupHTTP</span>
+                <span class="method-start">66858 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">67930 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTextSinkMapperEventGroupSingleEvent</span>
+                <span class="method-start">67930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">67958 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTextSinkMapperNewLineCharacter</span>
+                <span class="method-start">67958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">67978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTextSinkMapperWithDefaultMapping</span>
+                <span class="method-start">67978 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fileSinkTest</span>
+                <span class="method-start">68998 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">68998 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fileSinkTestGroup</span>
+                <span class="method-start">70128 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">70128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">71256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testHTTPTextMappingText</span>
+                <span class="method-start">71256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">72292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testHTTPTextMappingTextMultiple</span>
+                <span class="method-start">72292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">73355 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkCustomMapping</span>
+                <span class="method-start">73355 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">73376 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperEventGroupCustomDelimiter</span>
+                <span class="method-start">73376 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">73394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperEventGroupDefaultDelimiter</span>
+                <span class="method-start">73394 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">81595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperEventGroupSingleEvent</span>
+                <span class="method-start">81595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">81605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperNewLineCharacter</span>
+                <span class="method-start">81605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">81614 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperNewLineCharacterWrong</span>
+                <span class="method-start">81614 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">81623 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperNotEventGroupWithCustomDelimiter</span>
+                <span class="method-start">81623 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">81635 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkMapperWithoutPayload</span>
+                <span class="method-start">81635 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">81652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTextSinkWrongMapping</span>
+                <span class="method-start">81652 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

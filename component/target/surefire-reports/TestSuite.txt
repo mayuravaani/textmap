@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 82.536 sec <<< FAILURE! - in TestSuite
+testTextSinkMapperEventGroupCustomDelimiter(org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase)  Time elapsed: 0.037 sec  <<< FAILURE!
+java.lang.AssertionError: expected [100000] but found [1]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupCustomDelimiter(TextDefaultSinkMapperTestCase.java:416)
+
+testTextSinkMapperEventGroupDefaultDecimeter(org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase)  Time elapsed: 60.08 sec  <<< FAILURE!
+java.lang.AssertionError: expected [1] but found [0]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupDefaultDecimeter(TextDefaultSinkMapperTestCase.java:340)
+
+testTextSinkMapperEventGroupSingleEvent(org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase)  Time elapsed: 0.026 sec  <<< FAILURE!
+java.lang.AssertionError: expected [1] but found [3]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupSingleEvent(TextDefaultSinkMapperTestCase.java:544)
+
+testTextSinkMapperNewLineCharacter(org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase)  Time elapsed: 0.019 sec  <<< FAILURE!
+java.lang.AssertionError: expected [1] but found [4]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperNewLineCharacter(TextDefaultSinkMapperTestCase.java:481)
+
+testTextSinkMapperWithDefaultMapping(org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase)  Time elapsed: 1.014 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2] but found [10]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperWithDefaultMapping(TextDefaultSinkMapperTestCase.java:144)
+

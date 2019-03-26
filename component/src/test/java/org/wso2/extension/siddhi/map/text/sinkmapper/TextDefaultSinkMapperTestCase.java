@@ -74,7 +74,7 @@ public class TextDefaultSinkMapperTestCase {
 
             @Override
             public String getTopic() {
-                return "W&SO2";
+                return "WSO2";
             }
         };
 
@@ -130,9 +130,9 @@ public class TextDefaultSinkMapperTestCase {
         InputHandler stockStream = siddhiAppRuntime.getInputHandler("FooStream");
 
         siddhiAppRuntime.start();
-        stockStream.send(new Object[] {"W&SO2", 55.6f, 100L});
+        stockStream.send(new Object[] {"WSO2", 55.6f, 100L});
         stockStream.send(new Object[] {"IBM", 75.6f, 100L});
-        stockStream.send(new Object[] {"W&SO2", 57.6f, 100L});
+        stockStream.send(new Object[] {"WSO2", 57.6f, 100L});
         SiddhiTestHelper.waitForEvents(waitTime, 2, wso2Count, timeout);
         SiddhiTestHelper.waitForEvents(waitTime, 1, ibmCount, timeout);
 
@@ -275,7 +275,7 @@ public class TextDefaultSinkMapperTestCase {
     }
 
     @Test
-    public void testTextSinkMapperEventGroupDefaultDecimeter() throws InterruptedException {
+    public void testTextSinkMapperEventGroupDefaultDelimiter() throws InterruptedException {
         log.info("Test for default event delimiter.");
         InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
             @Override
@@ -817,5 +817,75 @@ public class TextDefaultSinkMapperTestCase {
                 "headers:\"'place:office'\"\n");
         listenerHandler.shutdown();
         siddhiAppRuntime.shutdown();
+    }
+
+    @Test
+    public void testTextSinkMapperEventGroupingFalseWithEventArray() throws InterruptedException {
+        log.info("Test for default event delimiter.");
+        InMemoryBroker.Subscriber subscriberWSO2 = new InMemoryBroker.Subscriber() {
+            @Override
+            public void onMessage(Object msg) {
+                wso2Count.incrementAndGet();
+            }
+
+            @Override
+            public String getTopic() {
+                return "WSO2";
+            }
+        };
+
+        InMemoryBroker.Subscriber subscriberIBM = new InMemoryBroker.Subscriber() {
+            @Override
+            public void onMessage(Object msg) {
+                ibmCount.incrementAndGet();
+            }
+
+            @Override
+            public String getTopic() {
+                return "IBM";
+            }
+        };
+
+        //subscribe to "inMemory" broker per topic
+        InMemoryBroker.subscribe(subscriberWSO2);
+        InMemoryBroker.subscribe(subscriberIBM);
+
+        String streams = "" +
+                "@App:name('TestSiddhiApp')" +
+                "define stream FooStream (symbol string, price float, volume long); " +
+                "@sink(type='inMemory', topic='{{symbol}}', @map(type='text' , event.grouping.enabled='false')) " +
+                "define stream BarStream (symbol string, price float, volume long); ";
+
+        String query = "" +
+                "from FooStream " +
+                "select * " +
+                "insert into BarStream; ";
+
+        SiddhiManager siddhiManager = new SiddhiManager();
+        siddhiManager.setExtension("sink:inMemory", InMemorySink.class);
+        SiddhiAppRuntime siddhiAppRuntime = siddhiManager.createSiddhiAppRuntime(streams + query);
+        InputHandler stockStream = siddhiAppRuntime.getInputHandler("FooStream");
+
+        siddhiAppRuntime.start();
+        List<org.wso2.siddhi.core.event.Event> arrayList = new ArrayList<>(100);
+        for (int j = 0; j < 5; j++) {
+            arrayList.add(new org.wso2.siddhi.core.event
+                    .Event(System.currentTimeMillis(), new Object[] {"WSO2", 55.6f, 10}));
+            arrayList.add(new org.wso2.siddhi.core.event
+                    .Event(System.currentTimeMillis(), new Object[] {"IBM", 75.6f, 10}));
+        }
+        stockStream.send(arrayList.toArray(new org.wso2.siddhi.core.event.Event[5]));
+
+        SiddhiTestHelper.waitForEvents(waitTime, 1, wso2Count, timeout);
+        SiddhiTestHelper.waitForEvents(waitTime, 1, ibmCount, timeout);
+
+        //assert event count
+        Assert.assertEquals(wso2Count.get(), 5);
+        Assert.assertEquals(ibmCount.get(), 5);
+        siddhiAppRuntime.shutdown();
+
+        //unsubscribe from "inMemory" broker per topic
+        InMemoryBroker.unsubscribe(subscriberWSO2);
+        InMemoryBroker.unsubscribe(subscriberIBM);
     }
 }

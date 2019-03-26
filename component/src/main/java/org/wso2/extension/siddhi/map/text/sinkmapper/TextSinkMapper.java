@@ -100,9 +100,9 @@ import java.util.Map;
                 @Example(
                         syntax = "@sink(type='inMemory', topic='stock', @map(type='text', " +
                                 " @payload(" +
-                                "SensorID : {{symbol}}/{{Volume}},\n" +
-                                "SensorPrice : Rs{{price}}/=,\n" +
-                                "Value : {{Volume}}ml”)))",
+                                "SensorID : {{{symbol}}}/{{{Volume}}},\n" +
+                                "SensorPrice : Rs{{{price}}}/=,\n" +
+                                "Value : {{{Volume}}}ml”)))",
                         description = "This query performs a custom text mapping. The output is as follows:"
 
                                 + "SensorID : wso2/100,\n"
@@ -217,7 +217,6 @@ public class TextSinkMapper extends SinkMapper {
             }
             int idx = eventData.lastIndexOf(eventDelimiter);
             eventData.delete(idx - endOfLine.length(), idx + eventDelimiter.length());
-            log.info(eventData.toString());
             sinkListener.publish(eventData.toString());
         }
     }
@@ -226,17 +225,30 @@ public class TextSinkMapper extends SinkMapper {
     public void mapAndSend(Event event, OptionHolder optionHolder, Map<String, TemplateBuilder>
             payloadTemplateBuilderMap, SinkListener sinkListener) {
 
-        if (payloadTemplateBuilderMap != null) { //custom mapping case
-            if (event != null) {
-                log.info(constructCustomMapping(event));
-                sinkListener.publish(constructCustomMapping(event));
+        if (!eventGroupEnabled) {
+            if (payloadTemplateBuilderMap != null) { //custom mapping case
+                if (event != null) {
+                    sinkListener.publish(constructCustomMapping(event));
+                }
+            } else { //default mapping case
+                if (event != null) {
+                    sinkListener.publish(constructDefaultMapping(event));
+                }
             }
-
-        } else { //default mapping case
-            if (event != null) {
-                log.info(constructDefaultMapping(event));
-                sinkListener.publish(constructDefaultMapping(event));
+        } else {
+            StringBuilder eventData = new StringBuilder();
+            if (payloadTemplateBuilderMap != null) { //custom mapping case
+                if (event != null) {
+                    eventData.append(constructDefaultMapping(event));
+                }
+            } else { //default mapping case
+                if (event != null) {
+                    eventData.append(constructDefaultMapping(event));
+                }
             }
+            int idx = eventData.lastIndexOf(eventDelimiter);
+            eventData.delete(idx - endOfLine.length(), idx + eventDelimiter.length());
+            sinkListener.publish(eventData.toString());
         }
     }
 
@@ -284,6 +296,7 @@ public class TextSinkMapper extends SinkMapper {
         }
     }
 
+    //creating the template based on the attributes given by the user
     private String createDefaultTemplate(List<Attribute> attributeList, boolean isEventGroup) {
 
         StringBuilder template = new StringBuilder();
@@ -299,20 +312,21 @@ public class TextSinkMapper extends SinkMapper {
             }
         }
         int idx = template.lastIndexOf(EVENT_ATTRIBUTE_SEPARATOR);
-        if (!isEventGroup) {
+        if (!isEventGroup) {//template for event not grouping
             template.delete(idx, idx + (EVENT_ATTRIBUTE_SEPARATOR + endOfLine).length());
-        } else {
+        } else {//template for event grouping
             template.delete(idx, idx + EVENT_ATTRIBUTE_SEPARATOR.length()).append(eventDelimiter);
         }
         return template.toString();
     }
 
+    //creating the template based on the payload
     private String createCustomTemplate(String customTemplate, boolean isEventGroup) {
 
         StringBuilder template = new StringBuilder();
-        if (!isEventGroup) {
+        if (!isEventGroup) {//template for event not grouping
             template.append(customTemplate);
-        } else {
+        } else {//template for event grouping
             template.append(customTemplate).append(endOfLine).append(eventDelimiter);
         }
         return template.toString();

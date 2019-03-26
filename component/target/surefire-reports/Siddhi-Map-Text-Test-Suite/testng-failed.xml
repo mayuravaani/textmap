@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Siddhi-Map-Text-Test-Suite]">
+  <test name="Siddhi-map-text-tests(failed)">
+    <classes>
+      <class name="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase">
+        <methods>
+          <include name="testTextSinkMapperEventGroupSingleEvent"/>
+          <include name="init"/>
+          <include name="testTextSinkMapperNewLineCharacter"/>
+          <include name="testTextSinkMapperEventGroupCustomDelimiter"/>
+          <include name="testTextSinkMapperEventGroupDefaultDecimeter"/>
+          <include name="testTextSinkMapperWithDefaultMapping"/>
+        </methods>
+      </class> <!-- org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase -->
+      <class name="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase -->
+    </classes>
+  </test> <!-- Siddhi-map-text-tests(failed) -->
+</suite> <!-- Failed suite [Siddhi-Map-Text-Test-Suite] -->

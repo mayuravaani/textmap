@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Siddhi-map-text-tests</td><td class="numi">20</td><td class="numi">20</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">81.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Siddhi-map-text-tests &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="5">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase</td><td><a href="#m1"><b>testTextSinkMapperEventGroupCustomDelimiter</b>  </a></td><td class="numi">1</td><td>1552977020062</td><td class="numi">28</td></tr><tr class="failedodd"><td><a href="#m2"><b>testTextSinkMapperEventGroupDefaultDecimeter</b>  </a></td><td class="numi">1</td><td>1552977020101</td><td class="numi">60079</td></tr><tr class="failedodd"><td><a href="#m3"><b>testTextSinkMapperEventGroupSingleEvent</b>  </a></td><td class="numi">1</td><td>1552977081254</td><td class="numi">26</td></tr><tr class="failedodd"><td><a href="#m4"><b>testTextSinkMapperNewLineCharacter</b>  </a></td><td class="numi">1</td><td>1552977081282</td><td class="numi">18</td></tr><tr class="failedodd"><td><a href="#m5"><b>testTextSinkMapperWithDefaultMapping</b>  </a></td><td class="numi">1</td><td>1552977081302</td><td class="numi">1013</td></tr>
+<tr><th colspan="4">Siddhi-map-text-tests &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase</td><td><a href="#m6"><b>fileSinkTest</b>  </a></td><td class="numi">1</td><td>1552977082322</td><td class="numi">1129</td></tr>
+<tr class="passedeven"><td rowspan="1">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase</td><td><a href="#m7"><b>fileSinkTestGroup</b>  </a></td><td class="numi">1</td><td>1552977013334</td><td class="numi">2449</td></tr>
+<tr class="passedodd"><td rowspan="1">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase</td><td><a href="#m8"><b>fileSinkTestGroup</b>  </a></td><td class="numi">1</td><td>1552977083452</td><td class="numi">1127</td></tr>
+<tr class="passedeven"><td rowspan="3">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase</td><td><a href="#m9"><b>fileSinkTestNewLineCharacter</b>  </a></td><td class="numi">1</td><td>1552977015785</td><td class="numi">1136</td></tr><tr class="passedeven"><td><a href="#m10"><b>fileSinkTestSingle</b>  </a></td><td class="numi">1</td><td>1552977016922</td><td class="numi">1143</td></tr><tr class="passedeven"><td><a href="#m11"><b>testHTTPTextMappingText</b>  </a></td><td class="numi">1</td><td>1552977018066</td><td class="numi">1937</td></tr>
+<tr class="passedodd"><td rowspan="3">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase</td><td><a href="#m12"><b>testHTTPTextMappingText</b>  </a></td><td class="numi">1</td><td>1552977084580</td><td class="numi">1034</td></tr><tr class="passedodd"><td><a href="#m13"><b>testHTTPTextMappingTextMultiple</b>  </a></td><td class="numi">1</td><td>1552977085616</td><td class="numi">1062</td></tr><tr class="passedodd"><td><a href="#m14"><b>testTextSinkCustomMapping</b>  </a></td><td class="numi">1</td><td>1552977086679</td><td class="numi">20</td></tr>
+<tr class="passedeven"><td rowspan="2">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase</td><td><a href="#m15"><b>testTextSinkMapperDefaultEventGrouping</b>  </a></td><td class="numi">1</td><td>1552977020004</td><td class="numi">31</td></tr><tr class="passedeven"><td><a href="#m16"><b>testTextSinkMapperDefaultEventGroupingTrue</b>  </a></td><td class="numi">1</td><td>1552977020036</td><td class="numi">23</td></tr>
+<tr class="passedodd"><td rowspan="2">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase</td><td><a href="#m17"><b>testTextSinkMapperEventGroupCustomDelimiter</b>  </a></td><td class="numi">1</td><td>1552977086700</td><td class="numi">17</td></tr><tr class="passedodd"><td><a href="#m18"><b>testTextSinkMapperEventGroupDefaultDelimiter</b>  </a></td><td class="numi">1</td><td>1552977086718</td><td class="numi">8201</td></tr>
+<tr class="passedeven"><td rowspan="1">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase</td><td><a href="#m19"><b>testTextSinkMapperEventGroupHTTP</b>  </a></td><td class="numi">1</td><td>1552977080182</td><td class="numi">1071</td></tr>
+<tr class="passedodd"><td rowspan="6">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase</td><td><a href="#m20"><b>testTextSinkMapperEventGroupSingleEvent</b>  </a></td><td class="numi">1</td><td>1552977094919</td><td class="numi">9</td></tr><tr class="passedodd"><td><a href="#m21"><b>testTextSinkMapperNewLineCharacter</b>  </a></td><td class="numi">1</td><td>1552977094929</td><td class="numi">9</td></tr><tr class="passedodd"><td><a href="#m22"><b>testTextSinkMapperNewLineCharacterWrong</b>  </a></td><td class="numi">1</td><td>1552977094938</td><td class="numi">8</td></tr><tr class="passedodd"><td><a href="#m23"><b>testTextSinkMapperNotEventGroupWithCustomDelimiter</b>  </a></td><td class="numi">1</td><td>1552977094947</td><td class="numi">11</td></tr><tr class="passedodd"><td><a href="#m24"><b>testTextSinkMapperWithoutPayload</b>  </a></td><td class="numi">1</td><td>1552977094959</td><td class="numi">15</td></tr><tr class="passedodd"><td><a href="#m25"><b>testTextSinkWrongMapping</b>  </a></td><td class="numi">1</td><td>1552977094976</td><td class="numi">10</td></tr>
+</table>
+<h1>Siddhi-map-text-tests</h1>
+<h2 id="m1">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testTextSinkMapperEventGroupSingleEvent</h2>
+<div style="padding-left:3em">
+<p>expected [1] but found [3]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:370)
+<br/>at org.testng.Assert.assertEquals(Assert.java:380)
+<br/>at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupSingleEvent(TextDefaultSinkMapperTestCase.java:544)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testTextSinkMapperNewLineCharacter</h2>
+<div style="padding-left:3em">
+<p>expected [1] but found [4]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:370)
+<br/>at org.testng.Assert.assertEquals(Assert.java:380)
+<br/>at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperNewLineCharacter(TextDefaultSinkMapperTestCase.java:481)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testTextSinkMapperEventGroupCustomDelimiter</h2>
+<div style="padding-left:3em">
+<p>expected [100000] but found [1]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:370)
+<br/>at org.testng.Assert.assertEquals(Assert.java:380)
+<br/>at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupCustomDelimiter(TextDefaultSinkMapperTestCase.java:416)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testTextSinkMapperEventGroupDefaultDecimeter</h2>
+<div style="padding-left:3em">
+<p>expected [1] but found [0]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:370)
+<br/>at org.testng.Assert.assertEquals(Assert.java:380)
+<br/>at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupDefaultDecimeter(TextDefaultSinkMapperTestCase.java:340)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testTextSinkMapperWithDefaultMapping</h2>
+<div style="padding-left:3em">
+<p>expected [2] but found [10]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:370)
+<br/>at org.testng.Assert.assertEquals(Assert.java:380)
+<br/>at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperWithDefaultMapping(TextDefaultSinkMapperTestCase.java:144)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testHTTPTextMappingText</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:fileSinkTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:fileSinkTestGroup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkMapperNewLineCharacter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testHTTPTextMappingText</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkMapperEventGroupCustomDelimiter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkMapperEventGroupDefaultDelimiter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkCustomMapping</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkMapperNewLineCharacterWrong</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkMapperWithoutPayload</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkWrongMapping</h2>
+<div style="padding-left:3em">
+<p>Error on &apos;TestSiddhiApp&apos; @ Line: 1. Position: 202, near &apos;@sink(type=&apos;inMemory&apos;, topic=&apos;{{symbol}}&apos;, @map(type=&apos;text&apos;, @payload(&quot;Stock price of {{id}} is {{price}}&quot;)))&apos;. Attribute : {{id}} does not exist in @sink( type = &quot;inMemory&quot;, topic = &quot;{{symbol}}&quot;, @map( type = &quot;text&quot;, @payload( &quot;Stock price of {{id}} is {{price}}&quot;)))define stream BarStream (symbol string, price float, volume long).</p>
+org.wso2.siddhi.core.util.ExceptionUtil.populateQueryContext(ExceptionUtil.java:43)
+<br/>at org.wso2.siddhi.core.util.parser.helper.DefinitionParserHelper.addEventSink(DefinitionParserHelper.java:550)
+<br/>at org.wso2.siddhi.core.util.SiddhiAppRuntimeBuilder.defineStream(SiddhiAppRuntimeBuilder.java:115)
+<br/>at org.wso2.siddhi.core.util.parser.SiddhiAppParser.defineStreamDefinitions(SiddhiAppParser.java:318)
+<br/>at org.wso2.siddhi.core.util.parser.SiddhiAppParser.parse(SiddhiAppParser.java:225)
+<br/>at org.wso2.siddhi.core.SiddhiManager.createSiddhiAppRuntime(SiddhiManager.java:65)
+<br/>at org.wso2.siddhi.core.SiddhiManager.createSiddhiAppRuntime(SiddhiManager.java:74)
+<br/>at org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase.testTextSinkWrongMapping(TextCustomSinkMapperTestCase.java:478)
+<br/>28 lines not shown
+<p>Caused by Attribute : {{id}} does not exist in @sink( type = &quot;inMemory&quot;, topic = &quot;{{symbol}}&quot;, @map( type = &quot;text&quot;, @payload( &quot;Stock price of {{id}} is {{price}}&quot;)))define stream BarStream (symbol string, price float, volume long).</p>
+org.wso2.siddhi.core.util.transport.TemplateBuilder.parseTextMessage(TemplateBuilder.java:108)
+<br/>at org.wso2.siddhi.core.util.transport.TemplateBuilder.parse(TemplateBuilder.java:93)
+<br/>at org.wso2.siddhi.core.util.transport.TemplateBuilder.&lt;init&gt;(TemplateBuilder.java:44)
+<br/>at org.wso2.siddhi.core.stream.output.sink.SinkMapper.init(SinkMapper.java:70)
+<br/>at org.wso2.siddhi.core.stream.output.sink.Sink.init(Sink.java:92)
+<br/>at org.wso2.siddhi.core.util.parser.helper.DefinitionParserHelper.addEventSink(DefinitionParserHelper.java:546)
+<br/>at org.wso2.siddhi.core.util.SiddhiAppRuntimeBuilder.defineStream(SiddhiAppRuntimeBuilder.java:115)
+<br/>at org.wso2.siddhi.core.util.parser.SiddhiAppParser.defineStreamDefinitions(SiddhiAppParser.java:318)
+<br/>at org.wso2.siddhi.core.util.parser.SiddhiAppParser.parse(SiddhiAppParser.java:225)
+<br/>at org.wso2.siddhi.core.SiddhiManager.createSiddhiAppRuntime(SiddhiManager.java:65)
+<br/>at org.wso2.siddhi.core.SiddhiManager.createSiddhiAppRuntime(SiddhiManager.java:74)
+<br/>at org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase.testTextSinkWrongMapping(TextCustomSinkMapperTestCase.java:478)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testHTTPTextMappingTextMultiple</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkMapperEventGroupSingleEvent</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:fileSinkTestNewLineCharacter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:fileSinkTestGroup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testTextSinkMapperDefaultEventGroupingTrue</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testTextSinkMapperDefaultEventGrouping</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:fileSinkTestSingle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase:testTextSinkMapperEventGroupHTTP</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase:testTextSinkMapperNotEventGroupWithCustomDelimiter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

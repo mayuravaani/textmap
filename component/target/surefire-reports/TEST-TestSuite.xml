@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="82.536" tests="25" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/opt/jdk1.8.0_191/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/mayuravaani/Desktop/mapp/siddhi-map-text"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/mayuravaani/Desktop/mapp/siddhi-map-text"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/opt/jdk1.8.0_191/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-141-generic"/>
+    <property name="user.home" value="/home/mayuravaani"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="mayuravaani"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/opt/jdk1.8.0_191/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="java.ext.dirs" value="/opt/jdk1.8.0_191/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/opt/jdk1.8.0_191/jre/lib/resources.jar:/opt/jdk1.8.0_191/jre/lib/rt.jar:/opt/jdk1.8.0_191/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_191/jre/lib/jsse.jar:/opt/jdk1.8.0_191/jre/lib/jce.jar:/opt/jdk1.8.0_191/jre/lib/charsets.jar:/opt/jdk1.8.0_191/jre/lib/jfr.jar:/opt/jdk1.8.0_191/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="fileSinkTestGroup" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="2.45"/>
+  <testcase name="fileSinkTestNewLineCharacter" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="1.134"/>
+  <testcase name="fileSinkTestSingle" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="1.144"/>
+  <testcase name="testHTTPTextMappingText" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="1.936"/>
+  <testcase name="testTextSinkMapperDefaultEventGrouping" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="0.031"/>
+  <testcase name="testTextSinkMapperDefaultEventGroupingTrue" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="0.024"/>
+  <testcase name="testTextSinkMapperEventGroupCustomDelimiter" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="0.037">
+    <failure message="expected [100000] but found [1]" type="java.lang.AssertionError">java.lang.AssertionError: expected [100000] but found [1]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupCustomDelimiter(TextDefaultSinkMapperTestCase.java:416)
+</failure>
+    <system-out><![CDATA[[org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase] : Test for custom event delimiter.
+]]></system-out>
+  </testcase>
+  <testcase name="testTextSinkMapperEventGroupDefaultDecimeter" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="60.08">
+    <failure message="expected [1] but found [0]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [0]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupDefaultDecimeter(TextDefaultSinkMapperTestCase.java:340)
+</failure>
+    <system-out><![CDATA[[org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase] : Test for default event delimiter.
+]]></system-out>
+  </testcase>
+  <testcase name="testTextSinkMapperEventGroupHTTP" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="1.073"/>
+  <testcase name="testTextSinkMapperEventGroupSingleEvent" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="0.026">
+    <failure message="expected [1] but found [3]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [3]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperEventGroupSingleEvent(TextDefaultSinkMapperTestCase.java:544)
+</failure>
+    <system-out><![CDATA[[org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase] : Test for single event when event grouping enabled.
+]]></system-out>
+  </testcase>
+  <testcase name="testTextSinkMapperNewLineCharacter" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="0.019">
+    <failure message="expected [1] but found [4]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [4]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperNewLineCharacter(TextDefaultSinkMapperTestCase.java:481)
+</failure>
+    <system-out><![CDATA[[org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase] : Test for new.line.charater
+]]></system-out>
+  </testcase>
+  <testcase name="testTextSinkMapperWithDefaultMapping" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase" time="1.014">
+    <failure message="expected [2] but found [10]" type="java.lang.AssertionError">java.lang.AssertionError: expected [2] but found [10]
+	at org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase.testTextSinkMapperWithDefaultMapping(TextDefaultSinkMapperTestCase.java:144)
+</failure>
+    <system-out><![CDATA[[org.wso2.extension.siddhi.map.text.sinkmapper.TextDefaultSinkMapperTestCase] : Test default text mapping.
+]]></system-out>
+  </testcase>
+  <testcase name="fileSinkTest" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="1.129"/>
+  <testcase name="fileSinkTestGroup" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="1.126"/>
+  <testcase name="testHTTPTextMappingText" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="1.035"/>
+  <testcase name="testHTTPTextMappingTextMultiple" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="1.061"/>
+  <testcase name="testTextSinkCustomMapping" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="0.02"/>
+  <testcase name="testTextSinkMapperEventGroupCustomDelimiter" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="0.014"/>
+  <testcase name="testTextSinkMapperEventGroupDefaultDelimiter" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="8.2"/>
+  <testcase name="testTextSinkMapperEventGroupSingleEvent" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="0.008"/>
+  <testcase name="testTextSinkMapperNewLineCharacter" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="0.009"/>
+  <testcase name="testTextSinkMapperNewLineCharacterWrong" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="0.007"/>
+  <testcase name="testTextSinkMapperNotEventGroupWithCustomDelimiter" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="0.01"/>
+  <testcase name="testTextSinkMapperWithoutPayload" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="0.016"/>
+  <testcase name="testTextSinkWrongMapping" classname="org.wso2.extension.siddhi.map.text.sinkmapper.TextCustomSinkMapperTestCase" time="0.01"/>
+</testsuite>
